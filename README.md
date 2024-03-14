@@ -1,1 +1,1 @@
-# CFP_TECNICAS_2024
+# Tecnicas-de-Programacion-CFP

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../styles.css" rel="stylesheet">
+        <title>CFP N°6</title>
+        <script type="text/javascript" src="jsSwitch-09.js"></script>
+    </head>
+    <body>
+    <div class="mb-5 bg-dark">  
+        <br>
+        <center><h5 class="text-white">SWITCH  <strong> Ejercicio 9 </strong> </h5></center>
+        <a class="btn btn-info" onclick="location.href='index.html'" style="margin: 1%;">Menu Ejercicios</a>
+    </div>
+    
+    <div class="container mb-5">
+    <div class="row justify-content-around">
+        <div class="col-s-9 col-md-6 mt-3 bg-danger rounded-2">
+            <form class="py-5 mx-5">
+                <h1>Elija un destino</h1>
+                <select class="form-control form-control-lg mt-3" id ="txtIdEstacion">
+					<option value="Invierno">Invierno</option>
+					<option value="Verano">Verano</option>
+					<option value="Otoño">Otoño</option>
+					<option value="Primavera">Primavera</option>
+				</select>
+                <br>
+                <select class="form-control form-control-lg mt-3" id ="txtIdDestino">
+					<option value="Bariloche">Bariloche</option>
+					<option value="Cataratas">Cataratas</option>
+					<option value="Mar del plata">Mar del plata</option>
+					<option value="Ushuaia">Ushuaia</option>
+				</select>
+                <br>
+                <a class="btn btn-warning" onclick="mostrar()">Mostrar</a>
+              </form>	
+        </div>
+        <div class="col-s-12 col-md-4 mt-3">
+            <div class="bg-danger rounded-2 py-3 text-center">
+                <h2>Enunciado:</h2>
+                <h4>
+					Una agencia de viajes debe sacar las tarifas de los viajes, 
+                    se cobra $15.000 por cada estadia como base,
+					 se pide el ingreso de una estacion del año y localidad para vacacionar para
+					poder  calcular el precio final
+				</br> </br>En Invierno:
+				 	bariloche tiene un aumento del 20% 
+					cataratas y Cordoba tiene un descuento del 10%
+					Mar del plata  tiene un descuento del 20%
+				</br></br>En Verano:
+				 	bariloche tiene un descuento del 20% 
+					cataratas y Cordoba tiene un aumento del 10%
+					Mar del plata  tiene un aumento del 20%
+				</br></br>En Otoño y Primavera:
+				 	bariloche tiene un aumento del 10% 
+					cataratas tiene un aumento del 10%
+					Mar del plata  tiene un aumento del 10%
+					y Cordoba tiene el precio sin descuento
+				</h4>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container">
+        <center><span>Cetro de Formacion Profesional N° 6 - CIFPA</span></center>
+        </div>
+    </footer>
+    </body>
+</html>

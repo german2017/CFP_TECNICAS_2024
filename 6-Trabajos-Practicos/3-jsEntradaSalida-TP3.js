@@ -1,0 +1,9 @@
+function FahrenheitCentigrados()
+{
+	
+}
+
+function CentigradosFahrenheit()
+{
+	
+}
