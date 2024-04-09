@@ -63,16 +63,16 @@
 <script>
   function mostrar()
   {
-    try {
-      operandoUno = document.getElementById("operandoUno").value
-      operandoDos = document.getElementById("operandoDos").value
-      operador = document.getElementById("operador").value
-      console.log("'"+operandoUno+"'"+operador+"'"+operandoDos+"'");
-      //alert(eval("'"+operandoUno+"'"+operador+"'"+operandoDos+"'"))
-      document.getElementById("txtResultado").value = eval("'"+operandoUno+"'"+operador+"'"+operandoDos+"'")
-    } catch (error) {
-      alert(error)
-    }
+       var operandoUno = document.getElementById("operandoUno").value === "true";
+        var operandoDos = document.getElementById("operandoDos").value === "true";
+        var operador = document.getElementById("operador").value; 
+        var resultado;
+        if (operador === "&&") {
+            resultado = operandoUno && operandoDos;
+        } else{
+            resultado = operandoUno || operandoDos;
+        }            
+        document.getElementById("txtResultado").value = resultado;
   }
 </script>
 </html>
